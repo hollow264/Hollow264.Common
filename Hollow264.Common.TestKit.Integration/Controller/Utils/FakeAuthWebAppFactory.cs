@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Hollow264.Common.TestKit.Integration.Controller.Utils;
 
-internal class FakeAuthWebAppFactory<TEntryPoint>(Action<IWebHostBuilder>? configuration = null)
+public class FakeAuthWebAppFactory<TEntryPoint>(Action<IWebHostBuilder>? configuration = null)
     : TestWebAppFactory<TEntryPoint>(configuration)
     where TEntryPoint : class
 {

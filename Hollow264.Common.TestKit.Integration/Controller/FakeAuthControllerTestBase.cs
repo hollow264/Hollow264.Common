@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.Testing;
 
 namespace Hollow264.Common.TestKit.Integration.Controller;
 
-internal class FakeAuthControllerTestBase<TEntryPoint> : ControllerTestBase<TEntryPoint>
+public class FakeAuthControllerTestBase<TEntryPoint> : ControllerTestBase<TEntryPoint>
     where TEntryPoint : class
 {
     protected override WebApplicationFactory<TEntryPoint> CreateFactory() =>

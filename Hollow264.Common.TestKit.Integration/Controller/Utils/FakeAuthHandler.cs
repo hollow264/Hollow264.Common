@@ -6,7 +6,7 @@ using Microsoft.Extensions.Options;
 
 namespace Hollow264.Common.TestKit.Integration.Controller.Utils;
 
-internal class FakeAuthHandler(
+public class FakeAuthHandler(
     IOptionsMonitor<AuthenticationSchemeOptions> options,
     ILoggerFactory logger,
     UrlEncoder encoder
