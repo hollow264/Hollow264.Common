@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace Hollow264.Common.TestKit.Integration.Controller;
 
-internal class ControllerTestBase<TEntryPoint>
+public class ControllerTestBase<TEntryPoint>
     where TEntryPoint : class
 {
     protected WebApplicationFactory<TEntryPoint> Sut = null!;
